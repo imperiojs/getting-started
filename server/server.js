@@ -12,7 +12,10 @@ app.use(express.static(path.join(`${__dirname}/../client`)));
 /* ----------------------------------
  * --------      Routes      --------
  * ---------------------------------- */
-
+ // handles potential calls for favicon
+ app.get('/favicon.ico', (req, res) => {
+   res.send();
+ });
  // App will serve up different pages for client & desktop
 app.get('/', imperio.init(),
   (req, res) => {
@@ -39,18 +42,18 @@ app.get('/:nonce', imperio.init(),
     } else {
       console.log('I am mobile with NONCE!');
       if (req.imperio.connected) {
-        res.sendFile(path.join(`${__dirname}/../client/mobileConn.html`));
-      } else {
         res.sendFile(path.join(`${__dirname}/../client/mobile.html`));
+      } else {
+        res.sendFile(path.join(`${__dirname}/../client/mobileLogin.html`));
       }
     }
   }
 );
 // 404 error on invalid endpoint
-app.get('*', (req, res) => {
-  res.status(404)
-     .sendFile(path.join(`${__dirname}/../client/404.html`));
-});
+// app.get('*', (req, res) => {
+//   res.status(404)
+//      .sendFile(path.join(`${__dirname}/../client/404.html`));
+// });
 
 /* ----------------------------------
  * --------      Server      --------

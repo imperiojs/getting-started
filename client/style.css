@@ -16,6 +16,15 @@
   color:rgb(255, 206, 0);
 }
 
+#gesture-container {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height:200px;
+  width:100%;
+  margin-top:150px;
+}
+
 h1 {
   font-weight:300;
   width:100%;
@@ -49,4 +58,22 @@ h1 {
   align-items: center;
   font-size: 2em;
   border-radius:1em;
+}
+
+.content {
+  margin: 10px 0 0 0;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+#swipe-example {
+  border-radius:1em;
+  height: 250px;
+  width: 250px;
+  transition:transform 0.25s;
+  background-image: url("http://hammerjs.github.io/assets/img/swipe.svg");
+}
+
+#code {
+  color: white;
 }

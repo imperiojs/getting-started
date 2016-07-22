@@ -4,6 +4,7 @@
   "description": "Getting Started example for imperio!",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Austin, Austin, Matt, and Michael",

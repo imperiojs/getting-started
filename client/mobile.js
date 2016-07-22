@@ -1,4 +1,4 @@
-var swipeDiv = document.getElementById('swipe-box');
+var swipeBox = document.getElementById('swipe-box');
 
 imperio.emitRoomSetup();
-imperio.gesture('swipe', swipeDiv);
+imperio.gesture('swipe', swipeBox);

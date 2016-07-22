@@ -1,0 +1,16 @@
+{
+  "name": "imperio-getting-started",
+  "version": "1.0.0",
+  "description": "Getting Started example for imperio!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin, Austin, Matt, and Michael",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "2.4.2",
+    "express": "4.14.0",
+    "imperio": "0.3.0"
+  }
+}
